@@ -1,30 +1,19 @@
 import CareScale from "./CareScale";
 import "../assets/styles/plantItem.css";
 
-function isSpecialOffer(obj) {
-  return (
-    obj.isSpecialOffer && (
-      <div className="lmj-sales">
-        <p>Soldes</p>
-      </div>
-    )
-  );
+function handleClick(plantName) {
+  alert(`Vous voulez acheter 1 ${plantName}? Très bon choix 🌱✨`);
 }
 
-const PlantItem = ({ object }) => {
+const PlantItem = ({ cover, name, water, light, price }) => {
   return (
-    <li className="lmj-plant-item">
-      <img
-        className="lmj-plant-item-cover"
-        src={object.cover}
-        alt={`${object.name} cover`}
-      />
-      {isSpecialOffer(object)}
-      {object.name}
-      {object.isBestSale && <span> 🔥</span>}
+    <li className="lmj-plant-item" onClick={() => handleClick}>
+      <span className="lmj-plant-item-price">{price}€</span>
+      <img className="lmj-plant-item-cover" src={cover} alt={`${name} cover`} />
+      {name}
       <div>
-        <CareScale careType="water" scaleValue={object.water} />
-        <CareScale careType="light" scaleValue={object.light} />
+        <CareScale careType="water" scaleValue={water} />
+        <CareScale careType="light" scaleValue={light} />
       </div>
     </li>
   );
