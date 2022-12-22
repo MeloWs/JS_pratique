@@ -1,0 +1,66 @@
+{"data" :[{
+  "id":1,
+  "title": "Brown eggs",
+  "type": "dairy",
+  "description": "Raw organic brown eggs in a basket",
+  "filename": "eggs.jpg",
+  "price": 1.60,
+  "quantity": 6
+}, {
+  "id":2,
+  "title": "Sweet fresh stawberry",
+  "type": "fruit",
+  "description": "Sweet fresh stawberry on the wooden table",
+  "filename": "strawberries.jpg",
+  "price": 1.20,
+  "quantity": 5
+}, {
+  "id":3,
+  "title": "Homemade bread",
+  "type": "bakery",
+  "description": "Homemade bread",
+  "filename": "bread.jpg",
+  "price": 4.48,
+  "quantity": 1
+}, {
+  "id":4,
+  "title": "Fresh tomato gaspacho",
+  "type": "vegetable",
+  "description": "Fresh tomato gaspacho with basil",
+  "filename": "gaspaccio.jpg",
+  "price": 16.3,
+  "quantity": 1
+}, {
+  "id":5,
+  "title": "Green beans",
+  "type": "vegetable",
+  "description": "Raw organic green beans ready to eat",
+  "filename": "green_bean.jpg",
+  "price": 28.79,
+  "quantity": 1
+}, {
+  "id":6,
+  "title": "Baked stuffed portabello mushrooms",
+  "type": "bakery",
+  "description": "Homemade baked stuffed portabello mushrooms with spinach and cheese",
+  "filename": "bruschetta.jpg",
+  "price": 5.0,
+  "quantity": 4
+}, {
+  "id":7,
+  "title": "Oranges popsicle",
+  "type": "fruit",
+  "description": "Orange popsicle ice cream bars made from fresh oranges.  a refreshing summer treat.",
+  "filename": "orange_icecream.jpg",
+  "price": 5.48,
+  "quantity": 4
+}, {
+  "id":8,
+  "title": "Breakfast with muesli",
+  "type": "dairy",
+  "description": "Concept of healthy breakfast with muesli",
+  "filename": "nuts.jpg",
+  "price": 22.7,
+  "quantity": 1
+}]
+}

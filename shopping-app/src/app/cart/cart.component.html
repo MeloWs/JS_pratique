@@ -1,0 +1,27 @@
+<div class="cart-grid">
+  <h2>Cart</h2>
+  <div class="grid car-list" *ngFor="let list of cartProducts; index as i">
+    <div class="col-8 flex align-items-center">
+      <h3 class="item-title" style="margin-right: 10px">{{ list.title }}</h3>
+      <span class="item-quantity"> x{{ list.quantity }}</span>
+    </div>
+    <div class="col-4 flex align-items-center justify-content-end">
+      <h3 style="margin-right: 20px">
+        {{ list.price * list.quantity | currency : "EUR" }}
+      </h3>
+      <button
+        pButton
+        type="button"
+        icon="pi pi-times"
+        (click)="deleteProduct(list.id)"
+        class="p-button-danger p-button-rounded"
+      ></button>
+    </div>
+  </div>
+</div>
+<div class="grid total-cart" *ngIf="cartProducts.length > 0">
+  <div class="col-12" style="border-top: 1px solid #000">
+    <p>{{ totalQuantity }} articles</p>
+    <p>TOTAL : {{ totalPrice | currency : "EUR" }}</p>
+  </div>
+</div>
