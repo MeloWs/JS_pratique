@@ -1,0 +1,23 @@
+.cart-grid{
+    padding: 1rem;
+}
+.cart-list{
+    display: flex;
+        align-items: center;
+        padding: 1rem;
+        width: 100%;
+        border-bottom: 1px solid #595959;
+
+    .cart-infos {
+        display: flex;
+            
+    }
+    .product-list-detail {
+        flex: 1 1 0;
+    }
+}
+.total-cart{
+    padding: 1rem;
+    text-align: right;
+    align-self: flex-end;
+}

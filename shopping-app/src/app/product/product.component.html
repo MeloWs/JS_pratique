@@ -1,0 +1,29 @@
+<div class="card list-product">
+  <p-dataView #dv [value]="products" [rows]="9" filterBy="name" layout="grid">
+    <ng-template let-product pTemplate="gridItem">
+      <div class="p-col-12">
+        <div class="product-list-item">
+          <img
+            [src]="'./assets/images/' + product.filename"
+            [alt]="product.title"
+          />
+          <div class="product-list-detail">
+            <div class="product-description">
+              {{ product.description }}
+            </div>
+          </div>
+          <div class="product-list-action">
+            <span class="product-price">
+              {{ product.price | currency : "EUR" }}
+            </span>
+            <p-button
+              label="add to cart"
+              icon="pi pi-shopping-cart"
+              (click)="onAddToCart(product)"
+            ></p-button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </p-dataView>
+</div>
